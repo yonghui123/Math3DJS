@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { Vector, Vector2, Vector3 } from "../dev/index.js";
+      console.log("Vector: ", Vector);
+      const v1 = new Vector3(1, 2, 3);
+      const v2 = new Vector3(4, 5, 6);
+      const v3 = new Vector3(0, 0, 0);
+      Vector.add(v3, v1, v2);
+      console.log("Vector: ", v3);
+    </script>
+  </body>
+</html>

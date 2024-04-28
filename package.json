@@ -1,0 +1,29 @@
+{
+  "name": "math3djs",
+  "version": "1.0.0",
+  "description": "JavaScript实现的一套3D数学库",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "rollup --config rollup.config.dev.mjs --watch",
+    "build": "rollup --config rollup.config.prod.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonghui123/Math3DJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonghui123/Math3DJS/issues"
+  },
+  "homepage": "https://github.com/yonghui123/Math3DJS#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.16.4",
+    "tslib": "^2.6.2"
+  }
+}
