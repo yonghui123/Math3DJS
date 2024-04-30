@@ -75,4 +75,17 @@ export default class Vector {
     out.y = v1.x * v2.z - v2.x * v1.z;
     out.z = v1.x * v2.y - v2.x * v1.y;
   }
+
+  /**
+   * @description: 向量缩放之后相加 out = v1 + v2 * scale
+   * @param {Vector3} out
+   * @param {Vector3} v1
+   * @param {Vector3} v2
+   * @param {number} scale
+   */  
+  static scaleAndAdd(out: Vector3, v1: Vector3, v2: Vector3, scale: number): void {
+    out.x = v1.x + v2.x * scale;
+    out.y = v1.y + v2.y * scale;
+    out.z = v1.z + v2.z * scale;
+  }
 }

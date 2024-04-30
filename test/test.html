@@ -14,6 +14,10 @@
       const v3 = new Vector3(0, 0, 0);
       Vector.add(v3, v1, v2);
       console.log("Vector: ", v3);
+      Math.__proto__.clamp = (value, min, max) => {
+        return Math.max(min, Math.min(max, value));
+      }
+      console.log(Math.clamp(10, 5, 20))
     </script>
   </body>
 </html>
